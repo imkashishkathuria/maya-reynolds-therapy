@@ -6,7 +6,7 @@ import Image from 'next/image'
 const WorkWithMe = () => {
   return (
       <div>
-            <div className='mb-10 h-100vh'>
+            <div className=' h-100vh'>
                 <div className='flex justify-between bg-[#c2bfcb]'>
 
                     <Image

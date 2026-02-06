@@ -1,5 +1,6 @@
 import GetInTouch from "@/Components/GetInTouch";
 import HeroSection from "@/Components/HeroSection";
+import Intro from "@/Components/Intro";
 import Navbar from "@/Components/Navbar";
 import Specialities from "@/Components/Specialities";
 import WorkWithMe from "@/Components/WorkWithMe";
@@ -13,6 +14,7 @@ export default function Home() {
     <GetInTouch />
     <Specialities  />
     <WorkWithMe />
+    <Intro />
     </>
   );
 }

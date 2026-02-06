@@ -12,7 +12,7 @@ const FAQs = () => {
         { faqQ: "Do you have any openings?", ans: "Answer goes here." },
     ]
 
-    const [activeIndex, setActiveIndex] = useState(0)
+    const [activeIndex, setActiveIndex] = useState(-1)
 
     const handleClick = (index) => {
         setActiveIndex(index === activeIndex ? null : index)

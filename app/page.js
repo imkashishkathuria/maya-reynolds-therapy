@@ -1,3 +1,4 @@
+import Background from "@/Components/Background";
 import FAQs from "@/Components/FAQs";
 import GetInTouch from "@/Components/GetInTouch";
 import HeroSection from "@/Components/HeroSection";
@@ -17,6 +18,7 @@ export default function Home() {
     <WorkWithMe />
     <Intro />
     <FAQs />
+    <Background />
     </>
   );
 }

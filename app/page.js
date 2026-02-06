@@ -1,6 +1,7 @@
 import Background from "@/Components/Background";
 import Contact from "@/Components/Contact";
 import FAQs from "@/Components/FAQs";
+import Footer from "@/Components/Footer";
 import GetInTouch from "@/Components/GetInTouch";
 import GetStarted from "@/Components/GetStarted";
 import HeroSection from "@/Components/HeroSection";
@@ -23,6 +24,7 @@ export default function Home() {
     <Background />
     <GetStarted />
     <Contact />
+    <Footer />
     </>
   );
 }

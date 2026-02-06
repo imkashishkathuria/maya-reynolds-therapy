@@ -1,3 +1,4 @@
+import FAQs from "@/Components/FAQs";
 import GetInTouch from "@/Components/GetInTouch";
 import HeroSection from "@/Components/HeroSection";
 import Intro from "@/Components/Intro";
@@ -15,6 +16,7 @@ export default function Home() {
     <Specialities  />
     <WorkWithMe />
     <Intro />
+    <FAQs />
     </>
   );
 }

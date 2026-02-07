@@ -20,9 +20,9 @@ const FAQs = () => {
 
     return (
         <div>
-            <div className='flex justify-between px-15 py-25 items-center'>
+            <div className='flex flex-col lg:flex-row justify-between lg:px-15 py-10 lg:py-25 items-center'>
 
-                <div className="relative pl-10 h-[560px]">
+                <div className="relative lg:pl-10 lg:h-[560px]">
                     <div className="relative overflow-hidden rounded-t-[180px]">
                         <Image
                             src="/assets/faq.webp"
@@ -30,17 +30,17 @@ const FAQs = () => {
                             width={400}
                             height={500}
                             priority
-                            className='rounded-tl-full rounded-tr-full h-[580px]'
+                            className='rounded-tl-full rounded-tr-full lg:h-[580px] px-10 lg:px-0'
                         />
                     </div>
                 </div>
 
-                <div className='flex flex-col gap-15 pr-10 mb-30'>
+                <div className='flex flex-col gap-6 lg:gap-15 lg:pr-10 lg:mb-30 px-5 lg:px-0 py-8 lg:py-8'>
                     <SubHeading text="FAQs" />
 
                     <div className='flex flex-col'>
                         {faqs.map((item, index) => (
-                            <div key={index} className="border-y py-4">
+                            <div key={index} className="border-y py-2 lg:py-4">
 
                              
                                 <div
@@ -48,11 +48,11 @@ const FAQs = () => {
                                     onClick={() => handleClick(index)}
                                 >
                                     {activeIndex === index ? (
-                                        <FaMinus className='text-[43px] font-[300] leading-13' />
+                                        <FaMinus className='text-[28px] lg:text-[43px] font-[300] leading-13' />
                                     ) : (
-                                        <FaPlus className='text-[43px] font-[300] leading-13' />
+                                        <FaPlus className='text-[28px] lg:text-[43px] font-[300] leading-13' />
                                     )}
-                                    <p className='text-[43px] font-[500] leading-13'>
+                                    <p className='text-[28px] lg:text-[43px] font-[500] lg:leading-13'>
                                         {item.faqQ}
                                     </p>
                                 </div>

@@ -20,9 +20,9 @@ const Background = () => {
 
     return (
         <div>
-            <div className='flex justify-center py-25 items-center bg-[#e5e0da]'>
+            <div className='flex justify-center py-8 lg:py-25 items-center bg-[#e5e0da]'>
 
-                <div className='flex flex-col items-center gap-15 pr-10'>
+                <div className='flex flex-col items-center gap-15 pr-10 pl-6 lg:pl-0'>
                     <SubHeading text="My Professional Background" />
 
                     <div className='flex flex-col'>
@@ -31,24 +31,24 @@ const Background = () => {
 
 
                                 <div
-                                    className='flex justify-between w-[700px] items-center cursor-pointer transition-all duration-300 ease-out  '
+                                    className='flex justify-between lg:w-[700px] items-center cursor-pointer transition-all duration-300 ease-out  '
                                     onClick={() => handleClick(index)}
                                 >
                                     
-                                    <p className='text-[33px] font-[500] leading-13'>
+                                    <p className='text-[25px] lg:text-[33px] font-[500] leading-13'>
                                         {item.faqQ}
                                     </p>
                                     {activeIndex === index ? (
-                                        <FaMinus className='text-[33px] leading-13' />
+                                        <FaMinus className='text-[25px] lg:text-[33px] leading-13' />
                                     ) : (
-                                        <FaPlus className='text-[33px]  leading-13' />
+                                        <FaPlus className='text-[25px] lg:text-[33px]  leading-13' />
                                     )}
                                 </div>
 
                                 <div
                                     className={`overflow-hidden transition-all duration-500 ease-in-out ${activeIndex === index ? 'max-h-[200px] opacity-100 mt-3' : 'max-h-0 opacity-0 mt-0'}`}
                                 >
-                                    <p className='flex justify-center ml-[70px] text-[16px] w-[500px]'>
+                                    <p className='flex justify-center lg:ml-[70px] text-[16px] lg:w-[500px]'>
                                         {item.ans}
                                     </p>
                                 </div>

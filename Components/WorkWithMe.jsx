@@ -7,7 +7,7 @@ const WorkWithMe = () => {
   return (
       <div>
             <div className=' h-100vh'>
-                <div className='flex justify-between bg-[#c2bfcb]'>
+                <div className='flex flex-col lg:flex-row justify-between bg-[#c2bfcb]'>
 
                     <Image
                 
@@ -16,14 +16,14 @@ const WorkWithMe = () => {
                         width={1000}
                         height={10}
                         priority
-                        className='object-cover w-1/2'
+                        className='object-cover lg:w-1/2'
                     />
 
-                    <div className='flex flex-col justify-end w-1/2'>
+                    <div className='flex flex-col justify-end lg:w-1/2'>
 
-                    <div className='flex flex-col gap-7 px-12 pt-40 pb-20'>
+                    <div className='flex flex-col gap-7 px-7 lg:px-12 pt-10 lg:pt-40 pb-20'>
                         <SubHeading text="You don’t have to do this all alone." />
-                        <p className='whitespace-pre-wrap font-[500] text-[19px] '>If you are facing any of these, there’s hope:<br/> <br/><ul className='list-disc flex flex-col gap-4 px-10'>
+                        <p className='whitespace-pre-wrap font-[500] text-[19px] '>If you are facing any of these, there’s hope:<br/> <br/><ul className='list-disc flex flex-col gap-4 px-5 lg:px-10'>
                         <li>Persistent feelings of sadness or hopelessness</li>
                         <li>Trouble focusing or making decisions</li>
                         <li>Difficulty maintaining relationships</li>
@@ -41,7 +41,7 @@ const WorkWithMe = () => {
 
                     <div className='flex w-full '>
                             
-                                <button className='w-full py-7 whitespace-pre-wrap font-[600] text-[16px] flex justify-center items-center uppercase border-t border-[#223614] gap-2 hover:text-white hover:bg-[#223614] cursor-pointer transition-all duration-300 ease-out '>
+                                <button className='w-full py-5 lg:py-7 whitespace-pre-wrap font-[600] text-[16px] flex justify-center items-center uppercase border-t border-[#223614] gap-2 hover:text-white hover:bg-[#223614] cursor-pointer transition-all duration-300 ease-out '>
                                     <p className="transition-opacity duration-700 group-hover:opacity-90 ">Work With Me</p>
                                     <FaArrowRight />
                                 </button>

@@ -7,19 +7,19 @@ import PageButtons from './PageButtons'
 const HeroSection = () => {
     return (
         <div>
-            <div className='flex justify-between px-15 py-10 items-center gap-10'>
+            <div className='flex lg:flex-row flex-col justify-between lg:px-15 py-10 items-center lg:gap-10'>
                 <Image
                     src="/assets/HeroSectionImage.webp"
                     alt="Hero Section"
                     width={500}
                     height={400}
                     priority
-                    className='rounded-tl-full rounded-tr-full'
+                    className='rounded-tl-full rounded-tr-full px-7 lg:px-0'
                 />
 
-                <div className='flex flex-col gap-4 items-center px-23 mb-30'>
+                <div className='flex flex-col gap-4 items-center px-7 lg:px-23 mb-15 lg:mb-30 py-5 lg:py-0'>
                    <PageHeadings text="Live your life in full bloom" />
-                    <p className='whitespace-pre-wrap font-[500] text-[19px]'>Therapy for Adults in Minneapolis, MN.</p>
+                    <p className='whitespace-pre-wrap font-[500] text-[19px] text-center lg:text-left'>Therapy for Adults in Minneapolis, MN.</p>
                 <PageButtons text="connect with me" />
                 </div>
             </div>

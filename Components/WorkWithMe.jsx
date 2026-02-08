@@ -7,7 +7,7 @@ const WorkWithMe = () => {
   return (
       <div>
             <div className=' h-100vh'>
-                <div className='flex flex-col lg:flex-row justify-between bg-[#c2bfcb]'>
+                <div className='flex flex-col lg:flex-row justify-between bg-[#c2bfcb] text-[#212121]'>
 
                     <Image
                 
@@ -41,7 +41,7 @@ const WorkWithMe = () => {
 
                     <div className='flex w-full '>
                             
-                                <button className='w-full py-5 lg:py-7 whitespace-pre-wrap font-[600] text-[16px] flex justify-center items-center uppercase border-t border-[#223614] gap-2 hover:text-white hover:bg-[#223614] cursor-pointer transition-all duration-300 ease-out '>
+                                <button className='w-full py-5 lg:py-7 whitespace-pre-wrap font-[600] text-[16px] flex justify-center items-center uppercase border-t border-[#223614] gap-2 hover:text-white hover:bg-[#03252d] cursor-pointer transition-all duration-300 ease-out '>
                                     <p className="transition-opacity duration-700 group-hover:opacity-90 ">Work With Me</p>
                                     <FaArrowRight />
                                 </button>

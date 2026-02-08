@@ -5,7 +5,7 @@ const Contact = () => {
         <div className=''>
 
 
-            <div className='p-15 hidden lg:flex flex-col gap-5'>
+            <div className='p-15 hidden lg:flex flex-col gap-5 bg-[#03252d]'>
                 <div className='flex flex-col lg:flex-row justify-between'>
                     <h1 className='text-[35px] '>Lilac Template</h1>
                     <div className='flex gap-55'>

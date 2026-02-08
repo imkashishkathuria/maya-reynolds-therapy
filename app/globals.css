@@ -1,4 +1,9 @@
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); */
+
 @import "tailwindcss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,11 +14,14 @@
   font-family: Arial, Helvetica, sans-serif;
 } */
 body{
-  font-family: gopher, sans-serif !important;
+  /* font-family: Clash Display, sans-serif !important; */
+  font-family: "Playpen Sans", serif;
+  font-optical-sizing: auto;
   font-style: normal;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   background: #FBF6F1;
-  color: #223614;
+  /* color: #223614; */
+  color: white;
   scroll-behavior: smooth;
   /* line-height: 1.2rem; */
   /* letter-spacing: -1px; */

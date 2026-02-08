@@ -20,7 +20,7 @@ const Background = () => {
 
     return (
         <div>
-            <div className='flex justify-center py-8 lg:py-25 items-center bg-[#e5e0da]'>
+            <div className='flex justify-center py-8 lg:py-25 items-center bg-[#03252d]'>
 
                 <div className='flex flex-col items-center gap-15 pr-10 pl-6 lg:pl-0'>
                     <SubHeading text="My Professional Background" />

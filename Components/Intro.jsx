@@ -7,7 +7,7 @@ import SubHeading from './SubHeading'
 const Intro = () => {
     return (
         <div>
-            <div className='flex flex-col-reverse lg:flex-row justify-between py-15 lg:py-35 items-center gap-10 lg:gap-30 bg-[#e5e0da]'>
+            <div className='flex flex-col-reverse lg:flex-row justify-between py-15 lg:py-35 items-center gap-10 lg:gap-30 bg-[#03252d] mt-5'>
 
 
                 <div className='flex flex-col gap-5 lg:gap-8 pl-5 pr-5 lg:pr-0 lg:pl-10  lg:mb-30 lg:w-1/2'>

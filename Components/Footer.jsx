@@ -16,10 +16,10 @@ const Footer = () => {
 
                     ))}
                 </div>
-                <p>Website Template Credits:<span className='underline text-black font-[400] text-center lg:text-left'> Go Bloom Creative</span></p>
+                <p className='text-[#212121]'>Website Template Credits:<span className='underline text-black font-[400] text-center lg:text-left'> Go Bloom Creative</span></p>
             </div>
 
-            <p>All Rights Reserved © 2024 Your Business Name Here, LLC.</p>
+            <p className='text-[#212121]'>All Rights Reserved © 2024 Your Business Name Here, LLC.</p>
         </div>
     )
 }

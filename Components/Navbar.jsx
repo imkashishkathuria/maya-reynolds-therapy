@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className='hidden lg:flex justify-between px-5 lg:px-15 py-4 items-center'>
+      <div className='hidden lg:flex justify-between px-5 lg:px-15 py-4 items-center bg-[#03252d]' >
         <h1 className='hidden lg:block text-[35px] '>Lilac Template</h1>
         <div className='hidden lg:flex gap-10 items-center text-[20px]'>
           <p>Blog</p>
@@ -18,7 +18,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="lg:hidden relative bg-[#FBF7F2]">
+      <div className="lg:hidden relative bg-[#03252d]">
 
         <div className="flex justify-between items-center p-5">
           <button onClick={() => setActive(prev => !prev)}>

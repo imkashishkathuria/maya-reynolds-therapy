@@ -1,15 +1,18 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Playpen_Sans, Outfit } from "next/font/google";
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
+const playfair = Playpen_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-playfair",
+});
 
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-outfit",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -20,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` antialiased`}
+        className={`${playfair.variable} ${outfit.variable}`}
       >
         {children}
       </body>

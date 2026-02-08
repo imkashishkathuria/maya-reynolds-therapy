@@ -9,21 +9,23 @@ import Intro from "@/Components/Intro";
 import Navbar from "@/Components/Navbar";
 import Specialities from "@/Components/Specialities";
 import WorkWithMe from "@/Components/WorkWithMe";
+import Reveal from "@/Components/Reveal";
 
 
 export default function Home() {
   return (
     <>
     <Navbar />
-    <HeroSection />
-    <GetInTouch />
-    <Specialities  />
-    <WorkWithMe />
-    <Intro />
-    <FAQs />
-    <Background />
-    <GetStarted />
-    <Contact />
+    <Reveal> <HeroSection /></Reveal>
+   
+     <Reveal> <GetInTouch /> </Reveal>
+     <Reveal> <Specialities  /> </Reveal>
+     <Reveal> <WorkWithMe /> </Reveal>
+     <Reveal> <Intro /> </Reveal>
+     <Reveal> <FAQs /> </Reveal>
+     <Reveal> <Background /> </Reveal>
+     <Reveal> <GetStarted /> </Reveal>
+     <Reveal> <Contact /> </Reveal>
     <Footer />
     </>
   );

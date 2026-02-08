@@ -1,16 +1,20 @@
+"use client"
+
 import Image from 'next/image'
 import React from 'react'
 import PageHeadings from './PageHeadings'
 import PageButtons from './PageButtons'
 import SubHeading from './SubHeading'
+import { motion } from "framer-motion"
 
 const Intro = () => {
     return (
         <div>
             <div className='flex flex-col-reverse lg:flex-row justify-between py-15 lg:py-35 items-center gap-10 lg:gap-30 bg-[#03252d] mt-5'>
 
-
+            
                 <div className='flex flex-col gap-5 lg:gap-8 pl-5 pr-5 lg:pr-0 lg:pl-10  lg:mb-30 lg:w-1/2'>
+               
                     <SubHeading text="Hi, I’m Lilac." />
                     <p className='whitespace-pre-wrap font-[500] text-[19px]'>I'm committed to providing a safe and supportive environment where we can explore your thoughts, feelings, and behaviors. With empathy and guidance, we'll work together to navigate the challenges life throws your way.</p>
                     <div className='flex justify-center mt-15'>
@@ -20,7 +24,10 @@ const Intro = () => {
                 </div>
 
                 <div className="relative lg:w-1/2 lg:h-[560px] px-15 lg:px-0">
-
+                <motion.div initial={{ opacity: 0, x: -70 }}
+                                                        whileInView={{ opacity: 1, x: 0 }}
+                                                        transition={{ duration: 0.8, ease: "easeOut" }}
+                                                        viewport={{ once: true }}>
                     <div className="relative overflow-hidden rounded-t-[180px]">
                         <Image
                             src="/assets/intro2.webp"
@@ -40,6 +47,7 @@ const Intro = () => {
                             className="object-cover scale-110"
                         />
                     </div>
+                    </motion.div>
 
                 </div>
             </div>

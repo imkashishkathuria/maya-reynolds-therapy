@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import SubHeading from './SubHeading'
 import Image from 'next/image'
 import { FaMinus, FaPlus } from 'react-icons/fa'
+import { motion } from "framer-motion"
 
 const FAQs = () => {
 
@@ -24,6 +25,10 @@ const FAQs = () => {
 
                 <div className="relative lg:pl-10 lg:h-[560px]">
                     <div className="relative overflow-hidden rounded-t-[180px]">
+                         <motion.div initial={{ opacity: 0, x: -70 }}
+                                                                                whileInView={{ opacity: 1, x: 0 }}
+                                                                                transition={{ duration: 0.8, ease: "easeOut" }}
+                                                                                viewport={{ once: true }}>
                         <Image
                             src="/assets/faq.webp"
                             alt="Main"
@@ -32,6 +37,7 @@ const FAQs = () => {
                             priority
                             className='rounded-tl-full rounded-tr-full lg:h-[580px] px-10 lg:px-0'
                         />
+                        </motion.div>
                     </div>
                 </div>
 

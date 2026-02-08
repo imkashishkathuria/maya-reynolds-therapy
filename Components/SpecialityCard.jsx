@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import React, { useState } from 'react'
+import { motion } from "framer-motion"
 
 const SpecialityCard = ({ heading, subheading, image }) => {
 
@@ -37,6 +38,10 @@ const SpecialityCard = ({ heading, subheading, image }) => {
 
             </div>
             <div className='flex justify-center' onMouseEnter={() => setHoverText(true)} onMouseLeave={() => setHoverText(false)}>
+                 <motion.div initial={{ opacity: 0, y: -100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        viewport={{ once: true }}>
                 <Image src={image}
                     alt="Hero Section"
                     width={300}
@@ -50,6 +55,7 @@ const SpecialityCard = ({ heading, subheading, image }) => {
   hover:scale-110 my-5
 '
                 />
+                </motion.div>
             </div>
 
         </div>

@@ -1,11 +1,16 @@
+"use client"
+
 import React from 'react'
+
 
 import SubHeading from './SubHeading'
 import SpecialityCard from './SpecialityCard'
 
+
 const Specialities = () => {
   return (
     <div className='flex flex-col gap-12 lg:py-40 px-5 lg:px-10 items-center mt-4 bg-[#03252d]'>
+       
     <SubHeading text='My Specialities' />
     <p><p>I specialize in the following areas of practice.</p></p>
     <div className='flex flex-col lg:flex-row justify-between items-center gap-2'>

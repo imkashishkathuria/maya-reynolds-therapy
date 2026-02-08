@@ -1,26 +1,35 @@
+"use client"
+
 import React from 'react'
 import SubHeading from './SubHeading'
 import { FaArrowRight } from 'react-icons/fa'
 import Image from 'next/image'
+import { motion } from "framer-motion"
 
 const WorkWithMe = () => {
   return (
       <div>
             <div className=' h-100vh'>
                 <div className='flex flex-col lg:flex-row justify-between bg-[#c2bfcb] text-[#212121]'>
-
+                <motion.div initial={{ opacity: 0, x: -70 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.8, ease: "easeOut" }}
+                                        viewport={{ once: true }}>
                     <Image
                 
                         src="/assets/workwithme.webp"
                         alt="Hero Section"
-                        width={1000}
-                        height={10}
+                        width={700}
+                        height={800}
                         priority
-                        className='object-cover lg:w-1/2'
+                        className='object-cover h-full'
                     />
-
+                </motion.div>
                     <div className='flex flex-col justify-end lg:w-1/2'>
-
+                     <motion.div initial={{ opacity: 0, y: -70 }}
+                                            whileInView={{ opacity: 1, y: 0 }}
+                                            transition={{ duration: 0.8, ease: "easeOut" }}
+                                            viewport={{ once: true }}>
                     <div className='flex flex-col gap-7 px-7 lg:px-12 pt-10 lg:pt-40 pb-20'>
                         <SubHeading text="You don’t have to do this all alone." />
                         <p className='whitespace-pre-wrap font-[500] text-[19px] '>If you are facing any of these, there’s hope:<br/> <br/><ul className='list-disc flex flex-col gap-4 px-5 lg:px-10'>
@@ -38,6 +47,7 @@ const WorkWithMe = () => {
                     
                         
                     </div>
+                    </motion.div>
 
                     <div className='flex w-full '>
                             

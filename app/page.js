@@ -10,6 +10,7 @@ import Navbar from "@/Components/Navbar";
 import Specialities from "@/Components/Specialities";
 import WorkWithMe from "@/Components/WorkWithMe";
 import Reveal from "@/Components/Reveal";
+import OurOffice from "@/Components/OurOffice";
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
      <Reveal> <Specialities  /> </Reveal>
      <Reveal> <WorkWithMe /> </Reveal>
      <Reveal> <Intro /> </Reveal>
+     <Reveal> <OurOffice /></Reveal>
      <Reveal> <FAQs /> </Reveal>
      <Reveal> <Background /> </Reveal>
      <Reveal> <GetStarted /> </Reveal>

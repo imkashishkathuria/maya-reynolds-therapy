@@ -1,5 +1,6 @@
 "use client"
 
+import Image from 'next/image';
 import React, { useState } from 'react'
 import { FaCross, FaTimes } from 'react-icons/fa';
 import { FiMenu } from "react-icons/fi";
@@ -28,7 +29,11 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 w-full z-50 ">
       <div className=' hidden lg:flex justify-between px-5 lg:px-15 py-4 mb-3 items-center bg-[#03252d]' >
-        <h1 className='hidden lg:block text-[27px] '>Dr. Maya Reynolds, PsyD</h1>
+        <div className='flex gap-3 items-center'>
+          <Image src="/assets/icons8-wellness-64.png" width={50} height={20}/>
+          <h1 className='hidden lg:block text-[27px] '>Dr. Maya Reynolds, PsyD</h1>
+        </div>
+        
         <div className='hidden lg:flex gap-10 items-center text-[20px] cursor-pointer'>
           <p onClick={()=>scrollToSection("about", 70)}>About</p>
           <p  onClick={()=>scrollToSection("speciality", -50)}>Specialities</p>

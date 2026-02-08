@@ -30,7 +30,7 @@ const Contact = () => {
 
             </div>
 
-            <div className="lg:hidden w-full min-h-screen bg-[#FBF6EE] flex flex-col items-center justify-start py-12 px-6 text-center">
+            <div className="lg:hidden w-full min-h-screen bg-[#03252d] flex flex-col items-center justify-start py-12 px-6 text-center">
 
                 {/* Title */}
                 <h1 className="text-2xl font-semibold mb-6">

@@ -21,7 +21,7 @@ const FAQs = () => {
 
     return (
         <div>
-            <div id='faq' className='flex flex-col lg:flex-row justify-between lg:px-15 py-10 lg:py-25 items-center text-[#212121]'>
+            <div id='faq' className='flex flex-col lg:flex-row justify-between lg:px-15 py-10 lg:py-25 items-center bg-[#03252d]'>
 
                 <div className="relative lg:pl-10 lg:h-[560px]">
                     <div className="relative overflow-hidden rounded-t-[180px]">

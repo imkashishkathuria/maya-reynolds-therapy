@@ -9,14 +9,14 @@ import SpecialityCard from './SpecialityCard'
 
 const Specialities = () => {
   return (
-    <div className='flex flex-col gap-12 lg:py-40 px-5 lg:px-10 items-center mt-4 bg-[#03252d]'>
+    <div id='speciality' className='flex flex-col gap-12 py-10 lg:py-40 px-5 lg:px-10 items-center mt-4 bg-[#03252d]'>
        
-    <SubHeading text='My Specialities' />
-    <p><p>I specialize in the following areas of practice.</p></p>
+    <SubHeading text='Areas of Specialization' />
+    <p><p className='lg:w-[700px] text-center font-[200]'>I provide therapy for adults navigating emotional, psychological, and relational challenges. My work is grounded in evidence-based approaches and tailored to your unique experiences.</p></p>
     <div className='flex flex-col lg:flex-row justify-between items-center gap-2'>
-        <SpecialityCard heading="Self-Esteem" subheading="Building a strong sense of self-worth is key to living a fulfilled life. Let's work together to bolster your self-esteem." image="/assets/self-esteem.webp" />
-        <SpecialityCard heading="Relationships" subheading="Navigating relationships can be complex. I'm here to guide you through these complexities to help you form healthier connections." image="/assets/relationships.webp" />
-        <SpecialityCard heading="Burnout" subheading="Feeling overwhelmed by your career is more common than you think. Together, we'll identify strategies to manage and prevent burnout." image="/assets/burnout.webp" />
+        <SpecialityCard heading="Self-Esteem & Perfectionism" subheading="Support for individuals struggling with self-criticism, imposter syndrome, people-pleasing, and high internal pressure. Therapy helps build self-trust, confidence, and a more compassionate inner dialogue." image="/assets/self-esteem.webp" />
+        <SpecialityCard heading="Relationships & Attachment" subheading="Explore relationship patterns, communication challenges, boundaries, and attachment dynamics. Ideal for clients navigating dating, long-term partnerships, or the emotional impact of past relationships." image="/assets/relationships.webp" />
+        <SpecialityCard heading="Anxiety, Trauma & Burnout" subheading="Treatment for chronic anxiety, panic, trauma (single-incident or complex), and professional burnout. Sessions focus on emotional regulation, nervous system support, and sustainable coping strategies." image="/assets/burnout.webp" />
         </div>  
     </div>
   )

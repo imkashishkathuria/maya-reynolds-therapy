@@ -8,7 +8,7 @@ const GetStarted = () => {
             <div className='flex flex-col justify-center items-center px-5 lg:px-0 gap-8 lg:pl-10  lg:w-1/2'>
                 <p className='text-[30px] lg:text-[50px] font-[550] leading-13 text-[#212121]'> Get started today. </p>
 
-                <p className='whitespace-pre-wrap font-[500] text-[19px] text-center text-[#212121]'>Ready to take the first step towards a happier, healthier you? <br />Contact me to book your first session. I look forward to starting this therapeutic journey with you.</p>
+                <p className='whitespace-pre-wrap font-[500] text-[19px] text-center text-[#212121]'>Taking the first step toward therapy can feel intimidating—but it can also be deeply empowering.<br /> <br />If you’re ready to feel more grounded, supported, and connected to yourself, I invite you to reach out. Therapy can be a meaningful step toward lasting emotional wellbeing.</p>
                 <div className='flex justify-center mt-10'>
                     {/* <PageButtons text="Get in touch" /> */}
                     {/* <button className='px-10 py-2 whitespace-pre-wrap font-[600] text-[#212121] text-[16px] flex justify-between items-center uppercase border-1 border-[#212121] gap-2 hover:text-[#7e7b46] hover:bg-white cursor-pointer transition-all duration-300 ease-out '>

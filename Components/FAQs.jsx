@@ -8,9 +8,9 @@ import { motion } from "framer-motion"
 const FAQs = () => {
 
     const faqs = [
-        { faqQ: "Do you take insurance?", ans: "Answer goes here." },
-        { faqQ: "What are your rates?", ans: "Answer goes here." },
-        { faqQ: "Do you have any openings?", ans: "Answer goes here." },
+        { faqQ: "Do you take insurance?", ans: "I am an out-of-network provider. I’m happy to provide documentation for reimbursement through your insurance plan when applicable." },
+        { faqQ: "What are your rates?", ans: "Session fees vary depending on the type of service. Please contact me directly for current rates and availability." },
+        { faqQ: "Do you have any openings?", ans: "Availability changes periodically. Reach out to inquire about current openings for in-person or telehealth sessions." },
     ]
 
     const [activeIndex, setActiveIndex] = useState(-1)
@@ -21,7 +21,7 @@ const FAQs = () => {
 
     return (
         <div>
-            <div className='flex flex-col lg:flex-row justify-between lg:px-15 py-10 lg:py-25 items-center text-[#212121]'>
+            <div id='faq' className='flex flex-col lg:flex-row justify-between lg:px-15 py-10 lg:py-25 items-center text-[#212121]'>
 
                 <div className="relative lg:pl-10 lg:h-[560px]">
                     <div className="relative overflow-hidden rounded-t-[180px]">
@@ -30,7 +30,7 @@ const FAQs = () => {
                                                                                 transition={{ duration: 0.8, ease: "easeOut" }}
                                                                                 viewport={{ once: true }}>
                         <Image
-                            src="/assets/faq.webp"
+                            src="/assets/pexels-tracehudson-2454682.jpg"
                             alt="Main"
                             width={400}
                             height={500}
@@ -66,7 +66,7 @@ const FAQs = () => {
                                 <div
                                     className={`overflow-hidden transition-all duration-500 ease-in-out ${activeIndex === index ? 'max-h-[200px] opacity-100 mt-3' : 'max-h-0 opacity-0 mt-0'}`}
                                 >
-                                    <p className='ml-[70px] text-[16px]'>
+                                    <p className='lg:ml-[70px] lg:w-[500px] text-[16px]'>
                                         {item.ans}
                                     </p>
                                 </div>

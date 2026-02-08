@@ -19,7 +19,7 @@ const GetInTouch = () => {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         viewport={{ once: true }}>
                         <Image
-                            src="/assets/getintouch.webp"
+                            src="/assets/getintouch.avif"
                             alt="Hero Section"
                             width={400}
                             height={10}
@@ -29,18 +29,28 @@ const GetInTouch = () => {
                     </motion.div>
                     <div className='flex flex-col justify-end lg:w-1/2'>
                         <motion.div
-                                            initial={{ opacity: 0, y: -70 }}
-                                            whileInView={{ opacity: 1, y: 0 }}
-                                            transition={{ duration: 0.8, ease: "easeOut" }}
-                                            viewport={{ once: true }}
-                                        >
-                        <div className='flex flex-col gap-7 px-7 py-8 lg:py-0 lg:px-12 lg:mb-40 text-[#212121]'>
-                            <SubHeading text="Live a fulfilling life." />
-                            <p className='whitespace-pre-wrap font-[500] text-[19px] lg:w-[500px]'>Life can be challenging—especially when you're trying to balance your personal and professional life. <br /> <br />It's easy to feel like you're alone in facing these challenges, but I want you to know that I'm here to help.</p>
+                            initial={{ opacity: 0, y: -70 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                            viewport={{ once: true }}
+                        >
+                            <div className='flex flex-col gap-7 px-7 py-8 lg:py-0 lg:px-12 lg:mb-20 text-[#212121] pt-0! lg:pt-15!'>
+                                <SubHeading text="Live a fulfilling, grounded life." />
+                                <p className='whitespace-pre-wrap font-[500] text-[19px] lg:w-[500px]'>Life can feel overwhelming—especially when you’re balancing career demands, relationships, and the pressure to keep everything together. <br /> <br />Many clients come to therapy feeling functional on the outside while internally struggling with:
+
+                                <ul className='list-disc pl-12 py-5'>
+                                    <li>Constant worry or racing thoughts</li>
+                                    <li>Physical tension or chronic stress</li>
+                                    <li>Difficulty sleeping or relaxing</li>
+                                    <li>Emotional exhaustion or burnout</li>
+                                    <li>A persistent sense of bracing for something to go wrong</li>
+                                </ul>
+                        
+                                    Therapy offers a space to slow down, understand what’s happening beneath the surface, and build tools that support long-term emotional wellbeing.</p>
 
 
-                        </div>
-                    </motion.div>
+                            </div>
+                        </motion.div>
                         <div className='flex w-full '>
 
                             <button className='w-full py-5 lg:py-7 whitespace-pre-wrap font-[600] text-[16px] flex justify-center items-center uppercase border-t border-[#223614] gap-2 hover:bg-[#03252d] cursor-pointer transition-all duration-300 ease-out text-[#212121] hover:text-white'>
@@ -56,14 +66,14 @@ const GetInTouch = () => {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         viewport={{ once: true }}>
 
-                    <Image
-                        src="/assets/getintouch.webp"
-                        alt="Hero Section"
-                        width={700}
-                        height={10}
-                        priority
-                        className='hidden lg:block object-cover h-[95vh]'
-                    />
+                        <Image
+                            src="/assets/getintouch.avif"
+                            alt="Hero Section"
+                            width={700}
+                            height={10}
+                            priority
+                            className='hidden lg:block object-cover h-full'
+                        />
                     </motion.div>
                 </div>
             </div>

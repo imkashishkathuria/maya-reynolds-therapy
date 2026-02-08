@@ -6,9 +6,9 @@ import { FaMinus, FaPlus } from 'react-icons/fa'
 const Background = () => {
 
     const faqs = [
-        { faqQ: "Education", ans: "Euphorbia dianthus alchemilla muscari lavandula anthurium artemesia false artemesia moluccella gladiolus cirsium trollius anthurium prunus delphinium achillea." },
-        { faqQ: "Licensure", ans: "Euphorbia dianthus alchemilla muscari lavandula anthurium artemesia false artemesia moluccella gladiolus cirsium trollius anthurium prunus delphinium achillea." },
-        { faqQ: "Certifications", ans: "Euphorbia dianthus alchemilla muscari lavandula anthurium artemesia false artemesia moluccella gladiolus cirsium trollius anthurium prunus delphinium achillea." },
+        { faqQ: "Education", ans: "Doctorate in Clinical Psychology (PsyD)" },
+        { faqQ: "Licensure", ans: "Licensed Clinical Psychologist – California" },
+        { faqQ: "Certifications", ans: <ul className='list-disc'><li>EMDR Therapy</li><li>Trauma-informed care</li><li>Mindfulness-based interventions</li><li>Anxiety and panic treatment</li></ul> },
     ]
 
     const [activeIndex, setActiveIndex] = useState(-1)
@@ -34,7 +34,7 @@ const Background = () => {
                                     className='flex justify-between lg:w-[700px] items-center cursor-pointer transition-all duration-300 ease-out  '
                                     onClick={() => handleClick(index)}
                                 >
-                                    
+
                                     <p className='text-[25px] lg:text-[33px] font-[500] leading-13'>
                                         {item.faqQ}
                                     </p>

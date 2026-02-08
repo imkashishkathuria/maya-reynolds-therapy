@@ -10,13 +10,21 @@ import { motion } from "framer-motion"
 const Intro = () => {
     return (
         <div>
-            <div className='flex flex-col-reverse lg:flex-row justify-between py-15 lg:py-35 items-center gap-10 lg:gap-30 bg-[#03252d] mt-5'>
+            <div id='about' className='flex flex-col-reverse lg:flex-row justify-between py-15 lg:py-25 items-center gap-10 lg:gap-30 bg-[#03252d] mt-5'>
 
             
-                <div className='flex flex-col gap-5 lg:gap-8 pl-5 pr-5 lg:pr-0 lg:pl-10  lg:mb-30 lg:w-1/2'>
+                <div className='flex flex-col gap-5 lg:gap-8 pl-5 pr-5 lg:pr-0 lg:pl-10  lg:mb-10 lg:w-1/2'>
                
-                    <SubHeading text="Hi, I’m Lilac." />
-                    <p className='whitespace-pre-wrap font-[500] text-[19px]'>I'm committed to providing a safe and supportive environment where we can explore your thoughts, feelings, and behaviors. With empathy and guidance, we'll work together to navigate the challenges life throws your way.</p>
+                    <SubHeading text="Hi, I’m Dr. Maya Reynolds" />
+                    <p className='whitespace-pre-wrap font-[200]  text-[13px] lg:text-[19px]  pt-8'>I’m a licensed clinical psychologist (PsyD) based in Santa Monica, California, offering therapy for adults dealing with anxiety, stress, trauma, and burnout. <br /> <br />Therapy becomes a place to slow down, gain clarity, and develop healthier ways of relating to both work and relationships. <br /> <br />I take a warm, collaborative, and grounded approach, integrating:
+                    <ul className='list-disc px-14 py-4'>
+                        <li>Cognitive-Behavioral Therapy (CBT)</li>
+                        <li>EMDR</li>
+                        <li>Mindfulness-based practices</li>
+                        <li>Body-oriented and nervous-system-informed techniques</li>
+                        
+                    </ul>
+                    </p>
                     <div className='flex justify-center mt-15'>
                         <PageButtons text="Let's Chat" />
                     </div>
@@ -30,7 +38,7 @@ const Intro = () => {
                                                         viewport={{ once: true }}>
                     <div className="relative overflow-hidden rounded-t-[180px]">
                         <Image
-                            src="/assets/intro2.webp"
+                            src="/assets/Dr. Maya Reynolds.png"
                             alt="Main"
                             width={400}
                             height={500}
